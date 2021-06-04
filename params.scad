@@ -12,6 +12,35 @@ gear_2_extra_height = 2.0;
 // Shaft properties
 gear_shaft_hole_diameter=5.0;
 
+// Motor properties
+motor_linear_side_length=42.00;
+motor_shaft_diameter=5.0;
+motor_shaft_length=22.00;
+motor_body_height=33.70;
+motor_screw_pattern_side_length=31.0;
+motor_screw_holes_diameter=3.0;
+
+// Motor mounting properties
+motor_locator_walls_side_clearance=2.00;
+motor_locator_walls_thickness=3.00;
+motor_locator_walls_depth=3.00;
+motor_centre_circle_diameter=22.0;
+motor_centre_circle_depth=2.30;
+motor_shaft_clearance_diameter=10.0;
+motor_screw_hole_extra_clearance=0.50;
+motor_screw_holes_cap_diameter=6.50;
+motor_screw_holes_cap_depth=2.60;
+
+
+
+
+
+
+
+
+
+
 
 // Model-forming properties
+$fn = 25;
 eps=0.001;  // Very small number, to ensure non-zero overlaps.
