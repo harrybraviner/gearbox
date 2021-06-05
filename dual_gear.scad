@@ -15,7 +15,7 @@ module dual_gear() {
         
         // Shaft hole
         translate([0.0, 0.0, -eps])
-            cylinder(d=gear_shaft_hole_diameter, h=2*gear_width + 2*eps + gear_2_extra_height);
+            cylinder(d=shaft_diameter + shaft_extra_clearance_in_gear, h=2*gear_width + 2*eps + gear_2_extra_height);
     }
 }
 

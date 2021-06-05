@@ -4,13 +4,16 @@ gear_width = 8.0;
 gear_pressure_angle = 20.0;
 gear_helix_angle=35.0;
 
+gear_offset_factor=1.02;	// Set this to > 1.00 if gears bind.
+
 // Dual gear defining properties
 gear_teeth_1 = 30;
 gear_teeth_2 = 8;
 gear_2_extra_height = 2.0;
 
 // Shaft properties
-gear_shaft_hole_diameter=5.0;
+shaft_diameter=5.0;
+shaft_extra_clearance_in_gear=0.5;
 
 // Motor properties
 motor_linear_side_length=42.00;
@@ -38,8 +41,8 @@ motor_screw_holes_cap_depth=2.60;
 
 
 
-
-
+// Computed parameters - do not change
+gear_offset_length = gear_offset_factor*0.5*gear_module*(gear_teeth_1 + gear_teeth_2);
 
 // Model-forming properties
 $fn = 25;
